@@ -1,128 +1,211 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest Works, LLC | Premium Disinfecting & Environmental Protection Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #12161a; color: #e2e8f0; font-family: 'Space Grotesk', sans-serif; overflow-x: hidden; }
+        .font-syne { font-family: 'Syne', sans-serif; }
+        .text-mint { color: #3cd070; }
+        .bg-mint { background-color: #3cd070; }
+        .border-mint-soft { border-color: rgba(60, 208, 112, 0.15); }
+        .bg-dark-card { background-color: #1a2026; }
+        .reveal { transition: all 1.4s cubic-bezier(0.19, 1, 0.22, 1); opacity: 0; transform: translateY(60px); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #12161a; }
+        ::-webkit-scrollbar-thumb { background: #3cd070; border-radius: 3px; }
+    </style>
 </head>
-<body>
+<body class="antialiased">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <nav class="fixed w-full z-50 py-5 px-6 md:px-12 bg-[#12161a]/90 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-syne text-xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 bg-mint rounded-full animate-pulse"></span>
+                PEST WORKS <span class="font-light text-zinc-400 text-sm">// LLC</span>
+            </div>
+            <div class="hidden lg:flex space-x-10 text-xs font-medium tracking-widest uppercase text-zinc-400">
+                <a href="#defense" class="hover:text-mint transition">Defense Protocol</a>
+                <a href="#operations" class="hover:text-mint transition">Operations</a>
+                <a href="#standards" class="hover:text-mint transition">Ecology Policy</a>
+                <a href="#contact" class="border border-mint/30 text-mint px-5 py-2 rounded-md hover:bg-mint hover:text-[#12161a] transition duration-300 font-bold tracking-normal uppercase text-[11px]">Request Shield</a>
+            </div>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section class="min-h-screen flex items-center justify-center relative px-6 bg-[#0d1013]">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.pexels.com/photos/1294943/pexels-photo-1294943.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" class="w-full h-full object-cover filter grayscale contrast-150" alt="Clean Geometric Ceiling Architecture Structure">
+        </div>
+        <div class="relative z-10 max-w-5xl text-left w-full pt-20">
+            <div class="inline-flex items-center gap-3 border border-zinc-800 px-4 py-2 rounded-full mb-8 bg-zinc-900/60">
+                <span class="w-2 h-2 rounded-full bg-mint"></span>
+                <span class="text-zinc-400 font-mono text-[10px] uppercase tracking-widest">Active Environmental Maintenance // Tigard, OR</span>
+            </div>
+            <h1 class="font-syne text-5xl md:text-8xl font-extrabold text-white leading-none tracking-tight mb-8">
+                BIOLOGICAL <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-mint to-emerald-400">INTEGRITY.</span>
+            </h1>
+            <p class="text-zinc-400 text-base md:text-xl max-w-2xl leading-relaxed font-light mb-12">
+                Advanced structural disinfecting, environmental remediation, and multi-tier pest control architectures built for commercial and residential frameworks.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#operations" class="bg-mint text-[#12161a] font-bold text-sm px-8 py-4 rounded-lg hover:bg-emerald-400 transition shadow-lg shadow-mint/10 text-center">Deploy Suppression Services</a>
+                <a href="tel:12409823153" class="text-white font-mono text-sm border border-zinc-700 px-8 py-4 rounded-lg hover:bg-zinc-800 transition text-center">+1 240-982-3153</a>
+            </div>
+        </div>
+        <div class="absolute bottom-12 right-12 text-right hidden md:block">
+            <span class="text-zinc-600 font-mono text-xs block">SYSTEM COORDINATES</span>
+            <span class="text-zinc-400 font-mono text-xs">45.4312° N, 122.7719° W</span>
+        </div>
+    </section>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <section id="defense" class="py-48 px-6 md:px-12 bg-[#12161a] border-b border-zinc-800/60">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-start">
+            <div class="lg:col-span-5 reveal">
+                <span class="text-mint font-mono tracking-widest text-xs uppercase block mb-4">// REGULATORY ALIGNMENT</span>
+                <h2 class="font-syne text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
+                    Securing building biology across Oregon.
+                </h2>
+            </div>
+            <div class="lg:col-span-7 reveal lg:pt-4">
+                <p class="text-zinc-400 leading-loose text-lg font-light mb-8">
+                    Operating under rigorous safety guidelines, Pest Works, LLC manages high-tier disinfection and remediation strategies to neutralize invasive biological components within your infrastructure. Directed by principal lead William David Jonesii, our operations isolate structural vulnerabilities to eliminate infestations while maintaining chemical safety metrics.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8 border-t border-zinc-800">
+                    <div>
+                        <h4 class="font-syne font-bold text-lg text-white mb-1">9481 SW Tillie Ln</h4>
+                        <p class="text-zinc-500 font-mono text-xs uppercase tracking-wider">Operational Node Base</p>
+                    </div>
+                    <div>
+                        <h4 class="font-syne font-bold text-lg text-mint mb-1">Tigard, OR 97224</h4>
+                        <p class="text-zinc-500 font-mono text-xs uppercase tracking-wider">Regional Jurisdiction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <section id="operations" class="py-48 px-6 md:px-12 bg-[#161c22]">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-32 flex flex-col md:flex-row justify-between items-start md:items-end reveal">
+                <div>
+                    <span class="text-mint font-mono uppercase tracking-widest text-xs block mb-4">02 // FIELD OPERATIONS</span>
+                    <h2 class="font-syne text-5xl font-extrabold text-white tracking-tight">SUPPRESSION VECTORS</h2>
+                </div>
+                <p class="text-zinc-500 font-mono text-xs max-w-xs mt-4 md:mt-0 uppercase">Multi-tiered structural sanitization algorithms tailored for high-occupancy dwellings.</p>
+            </div>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+            <div class="grid lg:grid-cols-3 gap-10">
+                <div class="bg-dark-card p-8 rounded-xl border border-zinc-800/80 hover:border-mint/40 transition duration-500 reveal">
+                    <div class="overflow-hidden rounded-lg mb-8 h-64 bg-[#12161a]">
+                        <img src="https://images.pexels.com/photos/2346091/pexels-photo-2346091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 hover:scale-105 transition duration-700" alt="Safe Clean Interior Corporate Space">
+                    </div>
+                    <span class="text-zinc-600 font-mono text-xs block mb-2">[ VECTOR // 01 ]</span>
+                    <h3 class="font-syne text-2xl text-white font-bold mb-4">Targeted Disinfecting</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed font-light">Eradication of micro-biological hazards, bacterial layers, and airborne pathogenic vectors across vast industrial or corporate configurations.</p>
+                </div>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+                <div class="bg-dark-card p-8 rounded-xl border border-zinc-800/80 hover:border-mint/40 transition duration-500 reveal lg:translate-y-12">
+                    <div class="overflow-hidden rounded-lg mb-8 h-64 bg-[#12161a]">
+                        <img src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter grayscale contrast-125 brightness-90 hover:scale-105 transition duration-700" alt="Macro Biological Clean Science Pattern">
+                    </div>
+                    <span class="text-zinc-600 font-mono text-xs block mb-2">[ VECTOR // 02 ]</span>
+                    <h3 class="font-syne text-2xl text-white font-bold mb-4">Pest Mitigation Architecture</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed font-light">Advanced mechanical and safe chemical exclusion setups designed to completely deny entry to subterranean, flying, or structural wood-boring pests.</p>
+                </div>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+                <div class="bg-dark-card p-8 rounded-xl border border-zinc-800/80 hover:border-mint/40 transition duration-500 reveal">
+                    <div class="overflow-hidden rounded-lg mb-8 h-64 bg-[#12161a]">
+                        <img src="https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter grayscale contrast-110 brightness-90 hover:scale-105 transition duration-700" alt="Clean Sanitized Modern House Exterior">
+                    </div>
+                    <span class="text-zinc-600 font-mono text-xs block mb-2">[ VECTOR // 03 ]</span>
+                    <h3 class="font-syne text-2xl text-white font-bold mb-4">Dwelling Barriers</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed font-light">Custom perimeter setups applied carefully around high-complexity apartment zones and real-estate lines to lock down sustainable bio-security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="h-[75vh] relative overflow-hidden bg-[#0d1013]">
+        <img src="https://images.pexels.com/photos/952670/pexels-photo-952670.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" class="absolute inset-0 w-full h-full object-cover opacity-10 filter grayscale contrast-125" alt="Clean Forest Overhead Canopy representing Eco Safety">
+        <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+            <div class="max-w-4xl reveal">
+                <span class="text-mint font-mono text-xs tracking-[0.4em] uppercase block mb-6">INTELLIGENT ERADICATION</span>
+                <h3 class="font-syne text-3xl md:text-5xl text-white font-bold leading-snug tracking-tight">
+                    "We apply targeted biological defense metrics without compromising structural eco-balance."
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="standards" class="py-44 px-6 md:px-12 bg-[#12161a]">
+        <div class="max-w-5xl mx-auto bg-dark-card border border-zinc-800 p-8 md:p-16 rounded-2xl reveal">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 pb-6 border-b border-zinc-800">
+                <div>
+                    <h2 class="font-syne text-2xl font-bold text-white uppercase tracking-tight">Bio-Security Security Framework</h2>
+                    <p class="text-zinc-500 font-mono text-[10px] uppercase tracking-widest mt-1">Chemical Integrity Audit Section</p>
+                </div>
+                <div class="mt-4 sm:mt-0 text-[10px] font-mono font-bold text-mint border border-mint/20 px-4 py-2 rounded bg-mint/5">SYSTEM CLEAR // BLOCK 2026</div>
+            </div>
+            <div class="h-60 overflow-y-scroll pr-4 text-xs font-mono tracking-wide leading-loose text-zinc-500">
+                <p class="text-zinc-300 font-bold mb-4">REGULATORY MATRIX ENFORCED: MAY 18, 2026</p>
+                <p class="mb-4">Pest Works, LLC ("The Operational Entity") maintains complex parameters to safeguard customer identities and structural assets inside the state laws of Oregon. Our chemical applications obey ecological safety limitations completely.</p>
+                
+                <h4 class="text-white font-bold mt-6 mb-2">Section A: Communication Enclosures</h4>
+                <p class="mb-4">All secure transmissions coming through digital channels (contact@pestworksllc.org) or public telephone setups (+1 240-982-3153) are processed using encrypted isolated arrays. No commercial data marketing loops are configured.</p>
+                
+                <h4 class="text-white font-bold mt-6 mb-2">Section B: Asset Infestation Ledger</h4>
+                <p class="mb-4">Structural blueprint records, structural infestation notes, and treatment blueprints are withheld behind locked network silos to ensure absolute corporate discretion.</p>
+                
+                <h4 class="text-white font-bold mt-6 mb-2">Section C: Jurisdictional Bounds</h4>
+                <p>Contractual executions and professional field applications comply strictly with regional guidelines established in Tigard, Oregon, United States.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-32 px-6 md:px-12 bg-[#090c0f] text-zinc-400 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="font-syne text-4xl md:text-5xl font-extrabold mb-12 text-white">DEPLOY SHIELD <br><span class="text-mint font-light font-mono">// NOW.</span></h2>
+                <div class="space-y-10">
+                    <div>
+                        <span class="text-zinc-600 font-mono text-[10px] tracking-widest block mb-2 uppercase">Secure Command Email</span>
+                        <a href="mailto:contact@pestworksllc.org" class="text-2xl font-bold text-white hover:text-mint transition tracking-tight">contact@pestworksllc.org</a>
+                    </div>
+                    <div>
+                        <span class="text-zinc-600 font-mono text-[10px] tracking-widest block mb-2 uppercase">Direct Central Hotline</span>
+                        <a href="tel:12409823153" class="text-2xl font-bold text-white hover:text-mint transition tracking-tight">+1 240-982-3153</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col justify-end items-start lg:items-end">
+                <span class="text-zinc-600 font-mono text-[10px] tracking-widest block mb-3 uppercase">Physical Central Station</span>
+                <p class="font-syne text-2xl font-light leading-relaxed text-zinc-300">
+                    9481 SW Tillie Ln<br>
+                    Tigard, OR, 97224-5983<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-28 pt-10 border-t border-zinc-900 flex flex-col md:flex-row justify-between text-[10px] text-zinc-600 uppercase tracking-widest font-mono">
+            <p>&copy; 2026 PEST WORKS, LLC. DEFENSE GRID DEPLOYED.</p>
+            <p>COMPLIANCE REGISTERED: OREGON, USA</p>
+        </div>
+    </footer>
+
+    <script>
+        // High-Velocity Modern Intersection Observer for Technical Brutalist Layouts
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.04 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
